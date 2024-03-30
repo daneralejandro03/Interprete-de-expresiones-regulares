@@ -1,13 +1,14 @@
+
+from graphviz import Digraph
+
 class Vista:
-    def mostrar_menu(self):
-        # Implementación para mostrar el menú
-        print("1. Ingresar expresión regular")
-        print("2. Salir")
+    def ingresar_expresion_regular(self):
+        expresion_regular = input("Ingrese la expresión regular: ")
+        return expresion_regular
 
-    def mostrar_automata(self, info_automata: str):
-        # Implementación para mostrar la información del autómata
-        print(info_automata)
+    def mostrar_automata(self, automata):
+        automata_dibujado = automata.dibujar()
+        automata_dibujado.view()
 
-    def mostrar_error(self, mensaje_error: str):
-        # Implementación para mostrar mensajes de error
-        print(f"Error: {mensaje_error}")
+    def mostrar_error(self, mensaje):
+        print("Error:", mensaje)
