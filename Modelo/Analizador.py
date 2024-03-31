@@ -1,4 +1,4 @@
-from modelo.automata import Automata
+from Modelo.Automata import Automata
 
 class Analizador:
     def __init__(self):
